@@ -1,0 +1,50 @@
+.upload-view-container {
+    z-index: 1;
+    width: 90%;
+
+    .dragger-container {
+        background-color: #ffffff;
+
+        .anticon svg {
+            color: #a6a6a6;
+        }
+
+        .ant-upload-drag {
+            border-color: #a6a6a6;
+        }
+
+        .ant-upload-drag:hover {
+            border-color: #ff9248 !important;
+        }
+
+        p {
+            color: #a6a6a6 !important;
+        }
+    }
+
+    .progress-main-container {
+        .progress-container {
+            padding-top: 4%;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .ant-progress-text {
+                color: #a6a6a6;
+            }
+        }
+
+        .progress-text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+
+            p {
+                color: #a6a6a6;
+                font-size: 20px;
+            }
+        }
+    }
+}

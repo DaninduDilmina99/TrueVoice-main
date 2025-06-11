@@ -1,0 +1,38 @@
+.top-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 1% 10%;
+
+    .top-bar-logo {
+        width: 100px;
+    }
+
+    .top-bar-menu {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20%;
+        font-size: 16px;
+        font-weight: 500;
+
+        a {
+            text-decoration: none;
+            color: #545454;
+        }
+
+        span {
+            cursor: pointer;
+        }
+
+        span:hover {
+            color: #ff9248;
+            transition: color 0.5s;
+        }
+
+        .active {
+            color: #ff9248;
+        }
+    }
+}

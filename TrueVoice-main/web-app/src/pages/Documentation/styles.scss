@@ -1,0 +1,23 @@
+.documentation-banner {
+    width: 56%;
+    z-index: 1;
+    padding-top: 12%;
+    padding-left: 22%;
+}
+
+.documentation-main-container {
+    padding-left: 20%;
+    padding-top: 12%;
+    z-index: 1;
+
+    .documentation-container {
+        background-color: #ffffff;
+        width: 80%;
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        color: #a6a6a6;
+        z-index: 1;
+        padding: 4% 8% 6% 4%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}

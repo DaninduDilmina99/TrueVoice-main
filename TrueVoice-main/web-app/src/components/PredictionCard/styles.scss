@@ -1,0 +1,83 @@
+.prediction-card-main-container {
+    background-color: #ffffff;
+    width: 80%;
+    z-index: 1;
+    border: 1px solid #dcdcdc;
+    border-radius: 15px;
+
+    .icon-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8%;
+        padding-bottom: 2%;
+
+        .icon {
+            color: #83ac91;
+            font-size: 40px;
+        }
+
+        .icon-warn {
+            color: #d25151;
+            font-size: 40px;
+        }
+    }
+
+    .heading-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+
+        .heading-success {
+            color: #83ac91;
+        }
+
+        .heading-warn {
+            color: #d25151;
+        }
+    }
+
+    .text-row {
+        padding: 0 10%;
+        text-align: center;
+        color: #787878;
+        line-height: 1.2;
+    }
+
+    .logo-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2%;
+
+        .card-logo {
+            width: 140px;
+        }
+    }
+
+    .button-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 8%;
+
+        .button {
+            border-color: #ff9248 !important;
+            border-radius: 13px;
+            color: #ff9248;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background-color: #ff9248;
+            color: #ffffff;
+            transition: background-color 1s;
+        }
+    }
+}
