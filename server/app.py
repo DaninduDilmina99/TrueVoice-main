@@ -24,7 +24,8 @@ def get_analyse_detection(audio_file, transcribed_audio_data):
     # Perform analysis
     voice_analyse_result = voice_analyse.classify_audio(audio_file) 
     text_analyse_result = text_analyse.classify_audio(audio_file, transcribed_audio_data)
-
+    print(f"Voice Analysis Result: {voice_analyse_result}")
+    print(f"Text Analysis Result: {text_analyse_result}")
     # Combine predictions using weighted sum
     combined_prediction = 0.6 * voice_analyse_result + 0.4 * text_analyse_result
 
