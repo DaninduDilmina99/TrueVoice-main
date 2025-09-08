@@ -26,8 +26,12 @@
 
 .documentation-main-container {
   padding-left: 12%;
-  padding-top: 6%;
+  height: 100%;
+  padding-bottom: 6%;
   z-index: 1;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
 
   .documentation-container {
     background: #ffffff;
@@ -83,20 +87,33 @@
       align-items: flex-start;
       gap: 1rem;
       margin-bottom: 2rem;
+      flex-direction: column;
 
-      .step-number {
-        flex-shrink: 0;
-        background: #1677ff;
-        color: #fff;
-        font-weight: 600;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
+      .step-header {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.95rem;
-        box-shadow: 0 4px 12px rgba(22, 119, 255, 0.3);
+        flex-direction: row;
+        gap: 4%;
+        width: 100%;
+
+
+        h3 {
+          margin-top: 0%;
+        }
+
+        .step-number {
+          flex-shrink: 0;
+          background: #1677ff;
+          color: #fff;
+          font-weight: 600;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.95rem;
+          box-shadow: 0 4px 12px rgba(22, 119, 255, 0.3);
+        }
       }
 
       .step-content {
@@ -136,52 +153,4 @@
   margin-top: 0.8rem;
   font-size: 0.95rem;
   color: #666;
-}
-
-
-
-
-
-
-/* Ensure left container & right banner align vertically */
-.aligned-row {
-  align-items: flex-start; /* both start at same Y point */
-  padding-top: 40px; /* adjust for header spacing */
-}
-
-/* Step structure */
-.step {
-  margin-top: 32px; /* space below section title */
-}
-
-.step-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.step-number {
-  background-color: #007bff; /* blue circle */
-  color: #fff;
-  font-weight: 600;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-}
-
-.step-header h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.step-content {
-  margin-left: 44px; /* indent under the header */
-  margin-top: 8px;
-  font-size: 15px;
-  line-height: 1.5;
 }
