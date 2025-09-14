@@ -1,19 +1,59 @@
 ## Getting Started
 
-### Prerequisites
-- Node.js and npm installed on your machine
-- Python 3.7 required to run the server with deep speech model
-- Download and add deepspeech model to server/model folder (https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm)
+Follow these steps to set up the project on your local machine.
 
+---
+
+### Prerequisites
+Before you begin, make sure you have the following installed:
+
+- **Node.js** (with npm) → Required for the web app  
+  [Download Node.js](https://nodejs.org/)  
+
+- **Python 3.7** → Required to run the server with DeepSpeech model  
+  [Download Python](https://www.python.org/downloads/release/python-370/)  
+
+- **DeepSpeech Model** → Download the pre-trained model from Mozilla and place it inside the `server/model` folder:  
+  [Download v0.9.3 model (.pbmm file)](https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm)
+
+---
 
 ### Installation
-- Go to web app and do npm install 
 
-### Start Server
-- Go to server folder and run app.py 
+1. Clone the Repository
 
-### Start Web App
-- Go to web app and run npm start 
+    git clone https://github.com/DaninduDilmina99/TrueVoice-main
+    cd your-repo
+
+2. Install Python Dependencies
+Go to the server folder and install all required Python packages:
+
+    cd server
+    pip install -r requirements.txt
 
 
+3. Install Web App Dependencies
+Go to the web app folder and install the npm packages:
 
+    cd ../web-app
+    npm install
+
+---
+
+### Running the Application
+
+1. Start the Python Server
+
+Inside the server folder, run:
+python app.py
+
+This will start the backend server.
+
+
+2. Start the Web App
+
+Inside the web-app folder, run:
+npm start
+
+
+This will start the frontend React application, usually available at: http://localhost:3000
